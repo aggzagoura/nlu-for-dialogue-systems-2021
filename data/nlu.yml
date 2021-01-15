@@ -1,21 +1,40 @@
 nlu:
-- intent: greet
+- intent: vacuum
   examples: |
-    - Hi
-    - Hey!
-    - Hallo
-    - Good day
-    - Good morning
+    - vacuum
+    - vacuum here
+    - clean
+    - clean the room
+    - the floor needs vacuuming
 
-- intent: subscribe
+- intent: move_to_trash
   examples: |
-    - I want to get the newsletter
-    - Can you send me the newsletter?
-    - Can you sign me up for the newsletter?
+    - put that in the garbage
+    - throw that away
+    - put this in the trash can
+    - dispose of that
+    - put that in the junk
 
-- intent: inform
+- intent: give
   examples: |
-    - My email is example@example.com
-    - random@example.com
-    - Please send it to anything@example.com
-    - Email is something@example.com
+    - give that to me
+    - hand that over
+    - I need that
+    - come with that to me
+    - come here with that
+
+- intent: turn_on_light
+  examples: |
+    - turn on the light
+    - switch on the light
+    - make the room brighter
+    - light up the room
+    - make it brighter in here
+
+- intent: turn_off_light
+  examples: |
+    - turn off the light
+    - switch off the light
+    - make the room darker
+    - darken the room
+    - make it darker in here
