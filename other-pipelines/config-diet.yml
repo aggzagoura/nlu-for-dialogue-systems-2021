@@ -1,20 +1,12 @@
 language: en
 pipeline:
   - name: WhitespaceTokenizer
-  - name: RegexFeaturizer
-  - name: LexicalSyntacticFeaturizer
   - name: LanguageModelFeaturizer
     model_name: distilbert
     cache_dir: lfs
   - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: "char_wb"
+    analyzer: "word"
     min_ngram: 1
-    max_ngram: 4
+    max_ngram: 1
   - name: DIETClassifier
     epochs: 10
-    evaluate_on_number_of_examples: 0
-    evaluate_every_number_of_epochs: 5
-    tensorboard_log_directory: "./tensorboard"
-    tensorboard_log_level: "epoch"
-  - name: EntitySynonymMapper
